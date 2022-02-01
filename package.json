@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "express mongo jwt typescript server",
   "main": "./build/server.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "dev": "nodemon --watch ./src --exec npx ts-node ./src/server.ts",
     "dev-f": "ts-node-dev --respawn --transpile-only ./src/server.ts",
     "build": "rm -rf ./build/*.js && npx tsc",
-    "start": "node ./build/server.js",
-    "postinstall": "npx tsc"
+    "start": "node ./build/server.js"
   },
   "author": "",
   "license": "MIT",
