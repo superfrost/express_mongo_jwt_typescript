@@ -1,0 +1,43 @@
+{
+  "name": "express_mongo_typescript",
+  "version": "1.0.0",
+  "description": "express mongo jwt typescript server",
+  "main": "./build/server.js",
+  "scripts": {
+    "dev": "nodemon --watch ./src --exec npx ts-node ./src/server.ts",
+    "dev-f": "ts-node-dev --respawn --transpile-only ./src/server.ts",
+    "build": "rm -rf ./build/*.js && npx tsc",
+    "start": "node ./build/server.js",
+    "postinstall": "npx tsc"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.6",
+    "@types/mongoose-paginate-v2": "^1.4.3",
+    "@types/node": "^17.0.13",
+    "@types/uuid": "^8.3.4",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "bcrypt": "^5.0.1",
+    "dayjs": "^1.10.7",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "express-validator": "^6.13.0",
+    "helmet": "^5.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.8",
+    "mongoose-paginate-v2": "^1.5.0",
+    "pino": "^7.6.4",
+    "pino-pretty": "^7.5.1",
+    "uuid": "^8.3.2"
+  }
+}

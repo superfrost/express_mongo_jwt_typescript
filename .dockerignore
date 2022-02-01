@@ -1,0 +1,11 @@
+node_modules
+build
+.git
+.env
+*.md
+.gitignore
+Dockerfile
+docker-compose.yml
+.env.sample
+.database
+Procfile
